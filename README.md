@@ -24,7 +24,7 @@ The second API, Satellite Passes API, accepts a longitude / latitude and a satel
 
 **Mapbox Geocoding API: https://docs.mapbox.com/api/search/geocoding/**
 
-**Satellite Passes API: https://satellites.fly.dev/**
+**Satellite Passes API:  https://satellites.fly.dev/ **
 
 ## Steps
 

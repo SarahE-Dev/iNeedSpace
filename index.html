@@ -9,86 +9,121 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
 
-    <div class="content">
+    <div class="content container-fluid text-center bg-dark" style="height: 100%;">
 
-        <h1>
+        <h1 class="p-4 text-white">
             When can I see a certain satellite?
         </h1>
-        
-        <div class="section">
-            <div class="row">
-                <h2>
+        <div class="row">
+        <div class="section m-2 w-50 rounded-4 text-bg-secondary">
+            <div class="pt-3">
+                <h2 class="text-black">
                     Find Next Satellite Pass
                 </h2>
             </div>
-            <div class="row">
-                <label>Mapbox API Key</label>
-                <input id="api-key" />
+            <div class="p-2 d-inline-flex">
+                <label class="text-dark text-center">Address</label>
+                <input class="bg-body-tertiary w-75" id="address" />
             </div>
-            <div class="row">
-                <label>Address</label>
-                <input id="address" />
+            
+            <div class="d-flex">
+                <div class="p-1">
+                <input placeholder="City" class="bg-body-tertiary w-75" id="city" />
+                </div>
+                <div class="p-1">
+                <input placeholder="State" class="bg-body-tertiary w-75" id="state" />
+                </div>
             </div>
-            <div class="row">
-                <label>Satellite NORAD</label>
-                <input id="norad" />
+            <div class="d-flex">
+                <div class="p-1">
+                <input placeholder="Zip Code" class="bg-body-tertiary w-75" id="zip-code" />
+                </div>
+                <div class="p-1">
+                <input placeholder="Country" class="bg-body-tertiary w-75" id="country" />
             </div>
-            <div class="row">
-                <button id="search">
+            </div>
+        
+            <div class="">
+                <label class="text-dark">Satellite NORAD</label>
+                <input class="bg-body-tertiary w-75" id="norad" />
+            </div>
+            <div class="p-2">
+                <button class="bg-black" id="search">
                     Search
                 </button>
             </div>
         </div>
 
-        <div class="section">
-            <div class="row">
-                <h2>
+        <div class="section m-2 w-50 p-1 rounded-4 text-bg-secondary">
+            <div class="row pt-2">
+                <h2 class="text-black">
                     Notable Satellites
                 </h2>
             </div>
             <div class="row">
                 <div class="title">
-                    <b>Name</b>
+                    <b class="text-dark">Name</b>
                 </div>
                 <div class="title">
-                    <b>NORAD (Satellite ID)</b>
+                    <b class="text-dark">NORAD (Satellite ID)</b>
                 </div>
             </div>
             <div class="row">
-                <div class="item">
+                <div class="item text-dark">
                     Int. Space Station
                 </div>
-                <div class="item">
+                <div class="item text-dark">
                     25544
                 </div>
             </div>
             <div class="row">
-                <div class="item">
+                <div class="item text-dark">
                     Hubble Space Telescope
                 </div>
-                <div class="item">
+                <div class="item text-dark">
                     20580
                 </div>
             </div>
             <div class="row">
-                <div class="item">
+                <div class="item text-dark">
                     SpaceX Dragon
                 </div>
-                <div class="item">
+                <div class="item text-dark">
                     46920
                 </div>
             </div>
-            <div class="row">
-                <b>Find more of the brightest satellites' NORAD IDs&nbsp;<a href="https://www.n2yo.com/satellites/?c=1">here</a>.</b>
+            <div class="row p-1">
+                <b class="text-white">Find more of the brightest satellites' NORAD IDs&nbsp;<a class="text-white-50" href="https://www.n2yo.com/satellites/?c=1">here</a>.</b>
             </div>
         </div>
-
+    </div>
+    <div id="display-section">
+        <!-- <div class="card rounded-4" style="width: 20rem;">
+            <div class="card-header">
+                <h4>Location</h1>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-footer">
+                <h5>Something else.</h1>
+            </div>
+          </div> -->
+    </div>
     </div>
 
-    <script src="apiKey.js"></script>
+    
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
